@@ -6,7 +6,7 @@ const Navbar = ({ children }) => {
         <div className="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
-                <div className="w-full navbar bg-base-100 lg:px-20">
+                <div className="w-full navbar fixed top-0 bg-base-100 lg:px-20">
                     <div className="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal gap-x-2">
