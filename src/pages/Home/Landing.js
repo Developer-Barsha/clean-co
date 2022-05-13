@@ -1,15 +1,21 @@
 import React from 'react';
+import bucketgirl from './../../assets/images/bucketgirl.png'
 
 const Landing = () => {
     return (
-        <div className="hero min-h-screen bg-secondary">
-            <div className="hero-content mt-16 lg:px-10 flex-col lg:flex-row">
+        <div className="hero bg-accent mt-16 py-10">
+            <div className="hero-content flex-col lg:flex-row">
                 <div>
-                    <h1 className="text-5xl font-bold">Box Office News!</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p className='text-xl'>Best Quality</p>
+                    <h1 className="text-5xl font-bold">Professional Cleaning Service</h1>
+                    <p className="py-6 max-w-xl">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti.
+                    </p>
                     <button className="btn btn-primary">Get Started</button>
                 </div>
-                <img src="https://api.lorem.space/image/movie?w=260&h=400" className="max-w-sm rounded-lg shadow-2xl" alt=''/>
+                <div className='h-[60vh] lg:w-1/2'>
+                    <img src={bucketgirl} className="h-full shrink-0 mx-auto" alt='' />
+                </div>
             </div>
         </div>
     );
