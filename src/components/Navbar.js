@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
     return (
-        <div class="drawer drawer-end">
-            <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content flex flex-col">
-                <div class="w-full navbar bg-base-100 lg:px-20">
-                    <div class="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
-                    <div class="flex-none hidden lg:block">
-                        <ul class="menu menu-horizontal gap-x-2">
+        <div className="drawer drawer-end">
+            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content flex flex-col">
+                <div className="w-full navbar bg-base-100 lg:px-20">
+                    <div className="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
+                    <div className="flex-none hidden lg:block">
+                        <ul className="menu menu-horizontal gap-x-2">
                             <li>
                                 <NavLink to={'/'} className='rounded-lg'>Home</NavLink>
                             </li>
@@ -25,18 +25,18 @@ const Navbar = ({ children }) => {
                             <li>
                                 <NavLink to={'/login'} className='rounded-lg'>Login</NavLink>
                             </li>
-                            <li class="dropdown dropdown-end dropdown-hover">
-                                <label tabindex="0" class="btn btn-outline btn-primary rounded-lg">Book Now</label>
-                                <ul tabindex="0" class="dropdown-content menu shadow bg-base-100 rounded-box">
-                                    <li><a>Item 1 for you only</a></li>
+                            <li className="dropdown dropdown-end dropdown-hover">
+                                <label tabIndex="0" className="btn btn-outline btn-primary rounded-lg">Book Now</label>
+                                <ul tabIndex="0" className="dropdown-content menu shadow bg-base-100 rounded-box">
+                                    <li><a>Item 1 htmlFor you only</a></li>
                                     <li><a>Item 2</a></li>
                                 </ul>
                             </li>
-                            <label class='swap swap-rotate'>
+                            <label className='swap swap-rotate'>
                                 <input type='checkbox' data-toggle-theme='dark,light' />
 
                                 <svg
-                                    class='swap-on fill-current w-10 h-10'
+                                    className='swap-on fill-current w-10 h-10'
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
                                 >
@@ -44,7 +44,7 @@ const Navbar = ({ children }) => {
                                 </svg>
 
                                 <svg
-                                    class='swap-off fill-current w-10 h-10'
+                                    className='swap-off fill-current w-10 h-10'
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
                                 >
@@ -53,17 +53,17 @@ const Navbar = ({ children }) => {
                             </label>
                         </ul>
                     </div>
-                    <div class="flex-none lg:hidden">
-                        <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <div className="flex-none lg:hidden">
+                        <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
                     </div>
                 </div>
                 {children}
             </div>
-            <div class="drawer-side">
-                <label for="my-drawer-3" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+            <div className="drawer-side">
+                <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                     <li>
                         <NavLink to={'/'} className='rounded-lg'>Home</NavLink>
                     </li>
@@ -79,11 +79,11 @@ const Navbar = ({ children }) => {
                     <li>
                         <NavLink to={'/login'} className='rounded-lg'>Login</NavLink>
                     </li>
-                    <label class='swap swap-rotate'>
+                    <label className='swap swap-rotate'>
                         <input type='checkbox' data-toggle-theme='dark,light' />
 
                         <svg
-                            class='swap-on fill-current w-10 h-10'
+                            className='swap-on fill-current w-10 h-10'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 24 24'
                         >
@@ -91,7 +91,7 @@ const Navbar = ({ children }) => {
                         </svg>
 
                         <svg
-                            class='swap-off fill-current w-10 h-10'
+                            className='swap-off fill-current w-10 h-10'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 24 24'
                         >
