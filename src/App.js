@@ -7,18 +7,18 @@ import Login from "./pages/Login";
 import Services from "./pages/Services";
 
 const publicRoute=[
-  {id:1 , path : '/', name: "Home", Component: Home},
-  {id:2 , path : '/about', name: "About", Component: About},
-  {id:3 , path : '/services', name: "Services", Component: Services},
-  {id:4 , path : '/contact', name: "Contact", Component: Contact},
-  {id:5 , path : '/login', name: "Login", Component: Login},
+  {path : '/', name: "Home", Component: Home},
+  {path : '/about', name: "About", Component: About},
+  {path : '/services', name: "Services", Component: Services},
+  {path : '/contact', name: "Contact", Component: Contact},
+  {path : '/login', name: "Login", Component: Login},
 ]
 
 function App() {
   return (
     <Navbar>
       <Routes>
-        {publicRoute.map(({id, path, Component})=><Route key={id} path={path} element={<Component />}/>)}
+        {publicRoute.map(({path, Component}, index)=><Route key={index} path={path} element={<Component />}/>)}
       </Routes>
     </Navbar>
   );
