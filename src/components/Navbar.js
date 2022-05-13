@@ -2,11 +2,11 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div class="drawer">
+        <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col">
                 <div class="w-full navbar bg-base-300">
-                    <div class="flex-1 px-2 mx-2">Navbar Title</div>
+                    <div class="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
                     <div class="flex-none hidden lg:block">
                         <ul class="menu menu-horizontal">
                             <li><a>Navbar Item 1</a></li>
