@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
     return (
@@ -9,21 +9,21 @@ const Navbar = ({ children }) => {
                 <div class="w-full navbar bg-base-300">
                     <div class="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
                     <div class="flex-none hidden lg:block">
-                        <ul class="menu menu-horizontal">
+                        <ul class="menu menu-horizontal gap-x-2">
                             <li>
-                                <Link to={'/'} className='rounded-lg'>Home</Link>
+                                <NavLink to={'/'} className='rounded-lg'>Home</NavLink>
                             </li>
                             <li>
-                                <Link to={'/about'} className='rounded-lg'>About</Link>
+                                <NavLink to={'/about'} className='rounded-lg'>About</NavLink>
                             </li>
                             <li>
-                                <Link to={'/services'} className='rounded-lg'>Services</Link>
+                                <NavLink to={'/services'} className='rounded-lg'>Services</NavLink>
                             </li>
                             <li>
-                                <Link to={'/contact'} className='rounded-lg'>Contact</Link>
+                                <NavLink to={'/contact'} className='rounded-lg'>Contact</NavLink>
                             </li>
                             <li>
-                                <Link to={'/login'} className='rounded-lg'>Login</Link>
+                                <NavLink to={'/login'} className='rounded-lg'>Login</NavLink>
                             </li>
                         </ul>
                     </div>
@@ -39,19 +39,19 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
                     <li>
-                        <Link to={'/'} className='rounded-lg'>Home</Link>
+                        <NavLink to={'/'} className='rounded-lg'>Home</NavLink>
                     </li>
                     <li>
-                        <Link to={'/about'} className='rounded-lg'>About</Link>
+                        <NavLink to={'/about'} className='rounded-lg'>About</NavLink>
                     </li>
                     <li>
-                        <Link to={'/services'} className='rounded-lg'>Services</Link>
+                        <NavLink to={'/services'} className='rounded-lg'>Services</NavLink>
                     </li>
                     <li>
-                        <Link to={'/contact'} className='rounded-lg'>Contact</Link>
+                        <NavLink to={'/contact'} className='rounded-lg'>Contact</NavLink>
                     </li>
                     <li>
-                        <Link to={'/login'} className='rounded-lg'>Login</Link>
+                        <NavLink to={'/login'} className='rounded-lg'>Login</NavLink>
                     </li>
                 </ul>
 
