@@ -6,7 +6,7 @@ const Navbar = ({ children }) => {
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col">
-                <div class="w-full navbar bg-base-300">
+                <div class="w-full navbar bg-base-300 px-20">
                     <div class="flex-1 px-2 mx-2 text-2xl">Clean Co. </div>
                     <div class="flex-none hidden lg:block">
                         <ul class="menu menu-horizontal gap-x-2">
@@ -24,6 +24,13 @@ const Navbar = ({ children }) => {
                             </li>
                             <li>
                                 <NavLink to={'/login'} className='rounded-lg'>Login</NavLink>
+                            </li>
+                            <li class="dropdown dropdown-end dropdown-hover">
+                                    <label tabindex="0" class="btn btn-outline btn-primary rounded-lg">Book Now</label>
+                                    <ul tabindex="0" class="dropdown-content menu shadow bg-base-100 rounded-box">
+                                        <li><a>Item 1 for you only</a></li>
+                                        <li><a>Item 2</a></li>
+                                    </ul>
                             </li>
                         </ul>
                     </div>
