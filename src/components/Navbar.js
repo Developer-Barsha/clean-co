@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
     return (
@@ -10,19 +11,19 @@ const Navbar = ({ children }) => {
                     <div class="flex-none hidden lg:block">
                         <ul class="menu menu-horizontal">
                             <li>
-                                <a className='rounded-lg'>Home</a>
+                                <Link to={'/'} className='rounded-lg'>Home</Link>
                             </li>
                             <li>
-                                <a className='rounded-lg'>About</a>
+                                <Link to={'/about'} className='rounded-lg'>About</Link>
                             </li>
                             <li>
-                                <a className='rounded-lg'>Services</a>
+                                <Link to={'/services'} className='rounded-lg'>Services</Link>
                             </li>
                             <li>
-                                <a className='rounded-lg'>Contact</a>
+                                <Link to={'/contact'} className='rounded-lg'>Contact</Link>
                             </li>
                             <li>
-                                <a className='rounded-lg'>Login</a>
+                                <Link to={'/login'} className='rounded-lg'>Login</Link>
                             </li>
                         </ul>
                     </div>
@@ -38,19 +39,19 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
                     <li>
-                        <a className='rounded-lg'>Home</a>
+                        <Link to={'/'} className='rounded-lg'>Home</Link>
                     </li>
                     <li>
-                        <a className='rounded-lg'>About</a>
+                        <Link to={'/about'} className='rounded-lg'>About</Link>
                     </li>
                     <li>
-                        <a className='rounded-lg'>Services</a>
+                        <Link to={'/services'} className='rounded-lg'>Services</Link>
                     </li>
                     <li>
-                        <a className='rounded-lg'>Contact</a>
+                        <Link to={'/contact'} className='rounded-lg'>Contact</Link>
                     </li>
                     <li>
-                        <a className='rounded-lg'>Login</a>
+                        <Link to={'/login'} className='rounded-lg'>Login</Link>
                     </li>
                 </ul>
 
