@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({children}) => {
     return (
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -19,7 +19,7 @@ const Navbar = () => {
                         </label>
                     </div>
                 </div>
-                Content
+                {children}
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
