@@ -6,13 +6,13 @@ const Landing = () => {
         <>
             <div className="hero bg-accent mt-16 py-10">
                 <div className="hero-content flex-col lg:flex-row">
-                    <div data-aos='fade-right' data-aos-delay='300' data-aos-duration={'1000'}>
+                    <div data-aos='fade-right'>
                         <p className='text-xl text-primary'>Best Quality</p>
-                        <h1 className="text-5xl font-bold">Professional Cleaning Service</h1>
-                        <p className="py-6 max-w-xl">
+                        <h1 className="text-5xl font-bold" data-aos-delay='100' data-aos-duration={'800'}>Professional Cleaning Service</h1>
+                        <p className="py-6 max-w-xl" data-aos-delay='500' data-aos-duration={'700'}>
                             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button data-aos='zoom-in' data-aos-delay='300' data-aos-duration={'500'} className="btn btn-primary">Get Started</button>
                     </div>
                     <div data-aos='fade-left' data-aos-delay='400' data-aos-duration={'1000'} className='h-[60vh] w-5/6 lg:w-1/2'>
                         <img src={bucketgirl} className="h-full w-full shrink-0 mx-auto" alt='' />
